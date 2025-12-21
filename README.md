@@ -2,7 +2,7 @@
 
 - Category: Application / Empirical Study
 - Team Members: Jiho Hahn (jh2982), Ian (icl8)
-- Code for the given report is 
+- Code is in [AML_final_code.ipynb](./AML_final_code.ipynb)
 
 ## Abstract
 
