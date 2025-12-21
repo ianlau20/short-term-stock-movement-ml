@@ -1,0 +1,5 @@
+Feature Set,Mean F1
+Full,0.497
+no volatility,0.473
+no momentum,0.47
+no market context,0.44
