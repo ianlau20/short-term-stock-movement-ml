@@ -202,6 +202,24 @@ _Table 4. Removed features per ablation group_
 | No Volatility | Remove: Volatility_10d, High_Low_Range |
 | No Market Context | Index_SP500_Return_1d |
 
+_Table 5. Mean F1 scores across tickers from XGBoost prediction_
+
+| Ablation Group       | Mean F1 |
+|---------------------|---------|
+| Full Feature Set    | 0.414   |
+| No Momentum         | 0.450   |
+| No Volatility       | 0.401   |
+| No Market Context   | 0.400   |
+
+_Table 6. Mean F1 scores across tickers from LSTM prediction_
+
+| Ablation Group       | Mean F1 |
+|---------------------|---------|
+| Full Feature Set    | 0.497   |
+| No Momentum         | 0.470   |
+| No Volatility       | 0.473   |
+| No Market Context   | 0.440   |
+
 The ablation results from table 5 and 6 show clear differences in how models leverage feature groups.
 Logistic regression performs near random with the full feature set (mean F1 = 0.3972), confirming its
 limited capacity for modeling nonlinear financial dynamics. XGBoost provides only modest improvement
@@ -231,27 +249,8 @@ as news or social-media sentiment, macroeconomic indicators, and explicit market
 improve robustness. More expressive sequence models, including transformer-based architectures, may
 better capture long-range dependencies and cross-feature interactions. Importantly, predictive
 performance is likely to vary across market regimes (e.g., high- versus low-volatility periods), so
-regime-aware or adaptive modeling frameworks can be a promising direction for improving short-term
-
-## stock prediction.
-
-_Table 5. Mean F1 scores across tickers from XGBoost prediction_
-
-| Ablation Group       | Mean F1 |
-|---------------------|---------|
-| Full Feature Set    | 0.414   |
-| No Momentum         | 0.450   |
-| No Volatility       | 0.401   |
-| No Market Context   | 0.400   |
-
-_Table 6. Mean F1 scores across tickers from LSTM prediction_
-
-| Ablation Group       | Mean F1 |
-|---------------------|---------|
-| Full Feature Set    | 0.497   |
-| No Momentum         | 0.470   |
-| No Volatility       | 0.473   |
-| No Market Context   | 0.440   |
+regime-aware or adaptive modeling frameworks can be a promising direction for improving short-term 
+stock prediction.
 
 ## References
 
