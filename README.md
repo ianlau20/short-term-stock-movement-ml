@@ -6,6 +6,9 @@ Implemented data preprocessing, feature engineering, model training (LSTM, XGBoo
 **Tech stack:** Python, NumPy, Pandas, scikit-learn, XGBoost, PyTorch  
 **Focus:** ML pipelines, model evaluation, reproducibility
 
+> **Note:** This project was developed in Google Colab and assumes datasets stored in Google Drive.  
+> The notebook is provided for code review and methodology inspection rather than one-click execution.
+
 ## Project Highlights
 - Built a reproducible ML pipeline for time-series classification using historical stock data
 - Implemented and compared deep learning (LSTM) and tree-based (XGBoost) models
@@ -25,4 +28,3 @@ Implemented data preprocessing, feature engineering, model training (LSTM, XGBoo
 - `*.csv` – Experiment results and ablation metrics
 ## Full Report
 See [REPORT.md](./REPORT.md) for the complete academic writeup and experimental results.
-
